@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 services:
   gocd-server:
     build:
       context: .
       dockerfile: Dockerfile.gocd-server
     ports:
-      - "8153:8153" 
+      - "8153:8153"
       - "8154:8154"
     volumes:
       - ./config/cruise-config.xml:/godata/config/cruise-config.xml
